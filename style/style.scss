@@ -1,0 +1,429 @@
+$green: #156963;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11vw;
+    position: relative;
+    &__img {
+        display: block;
+        width: 91vw;
+    }
+
+    &__btn-group {
+        position: absolute;
+        width: 90vw;
+        top: 3.2vw;
+        left: 4.3vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        display: block;
+        width: 2.8vw;
+        height: 2.8vw;
+        background-image: url(../images/link.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    &__form-btn {
+        background-color: $green;
+        color: #fff;
+        border: 1px solid transparent;
+        font: 700 1vw/1.35vw "Montserrat";
+        padding: 0.6vw 2.5vw;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+
+        &:hover {
+            box-shadow: 0px 0px 10px 0 #000;
+        }
+    }
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__text {
+        padding: 14.5vw 5.2vw 0;
+    }
+    &__title {
+        font: 500 5vw "Montserrat";
+        max-width: 40vw;
+        color: $green;
+    }
+
+    &__subtitle {
+        font: 400 1.34vw/3.5vw "Montserrat";
+        margin-top: 2vw;
+        color: #2c1500;
+        opacity: 0.8;
+        max-width: 36vw;
+    }
+
+    &__btn-group {
+        display: flex;
+    }
+
+    &__action {
+        font: 500 1.8vw/2.2vw "Montserrat";
+        color: #333;
+        opacity: 0.5;
+        display: flex;
+        align-items: center;
+
+        &_prev::before {
+            content: "";
+            background-image: url(../images/arrow-back.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 2.5vw;
+            height: 2.5vw;
+            margin-right: 1vw;
+        }
+
+        &_next {
+            color: #f2f2f2;
+
+            &::after {
+                content: "";
+                background-image: url(../images/arrow-forward.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 2.5vw;
+                height: 2.5vw;
+                margin-left: 1vw;
+            }
+        }
+    }
+
+    &__btn {
+        padding: 3.1vw 3.9vw;
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font: 500 2.5vw "Montserrat";
+        width: 50%;
+        color: $green;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+
+        &_green {
+            color: #fff;
+            background-color: $green;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 10px 0 #000;
+        }
+    }
+}
+
+.features {
+    padding: 0 4.3vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6.25vw;
+}
+
+.feature-card {
+    max-width: 22vw;
+    padding: 1.7vw 1.25vw;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    transition: transform 0.4s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    &__title {
+        font: 700 1.25vw/1.8vw "Montserrat";
+        color: $green;
+        max-width: 13vw;
+        display: flex;
+
+        &::before {
+            content: "";
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 3.75vw;
+            height: 3.75vw;
+            padding-right: 1.25vw;
+        }
+
+        &_delivery {
+            &::before {
+                background-image: url(../images/feature01.svg);
+            }
+        }
+
+        &_service {
+            max-width: 18vw;
+            &::before {
+                background-image: url(../images/feature02.svg);
+            }
+        }
+        &_plants {
+            &::before {
+                background-image: url(../images/feature03.svg);
+            }
+        }
+        &_price {
+            &::before {
+                background-image: url(../images/feature04.svg);
+            }
+        }
+    }
+
+    &__desc {
+        font: 400 0.8vw/1.25vw "Montserrat";
+        max-width: 18.5vw;
+        margin-top: 1.25vw;
+    }
+}
+
+.plants {
+    padding: 0 4.3vw;
+    margin-bottom: 27vw;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__sort {
+        font: 700 1vw/1.2vw "Montserrat";
+        appearance: none;
+        max-width: 10.5vw;
+        padding: 0.6vw 2.2vw 0.6vw 1vw;
+
+        background-image: url(../images/select.svg);
+        background-repeat: no-repeat;
+        background-size: 1vw;
+        background-position: right 0.6vw top 0.9vw;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font: 700 1.5vw/2vw "Montserrat";
+    }
+}
+
+.plant-card {
+    text-align: center;
+    max-width: 17vw;
+
+    &__img {
+        width: 17vw;
+    }
+    &__title {
+        font: 700 1.25vw/1.5vw "Montserrat";
+        margin: 1.25vw 0 0.6vw;
+    }
+
+    &__price {
+        font: 400 1.25vw/1.5vw "Montserrat";
+    }
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+
+    &_open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 3.1vw;
+        max-width: 37vw;
+        position: relative;
+    }
+
+    &__close-cross {
+        position: absolute;
+        top: 1.7vw;
+        right: 1.7vw;
+        width: 1.1vw;
+        cursor: pointer;
+    }
+
+    &__img {
+        width: 6.8vw;
+    }
+
+    &__title {
+        font: 700 1.6vw "Montserrat";
+        margin: 1vw 0;
+    }
+
+    &__desc {
+        font-size: 1.29vw;
+    }
+
+    &__form {
+        margin-top: 3.1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 11.7vw;
+        width: 100%;
+    }
+
+    &__input {
+        padding: 0.6vw 1.17vw;
+        outline: 0;
+
+        &:-moz-placeholder {
+            color: #b5b8be;
+        }
+        &::-webkit-input-placeholder {
+            color: #b5b8be;
+        }
+    }
+
+    &__input,
+    &__btn {
+        border: 0.6px solid #dbdedf;
+        border-radius: 1.2vw;
+        font: 400 1.3vw/1.8vw "Montserrat";
+    }
+
+    &__btn-group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        padding: 0.6vw 4.4vw;
+        cursor: pointer;
+        background-color: #e8f2ff;
+    }
+}
+
+.invalid {
+    background-color: #ffb4b4;
+}
+
+
+.requestRes {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    border-spacing: 2.5vw 2vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+
+    & td, th{
+        font-size: 1.29vw;
+    }
+}
+
+.error{
+    display: none;
+    background-color: #fff;
+    padding: 2vw;
+    font-size: 1.25vw;
+    color: red;
+}
+
+.spinner {
+    color: #e8f2ff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .spinner:after {
+    animation: changeContent .8s linear infinite;
+    display: block;
+    content: "⠋";
+    font-size: 6.25vw;
+  }
+  
+  @keyframes changeContent {
+    10% { content: "⠙"; }
+    20% { content: "⠹"; }
+    30% { content: "⠸"; }
+    40% { content: "⠼"; }
+    50% { content: "⠴"; }
+    60% { content: "⠦"; }
+    70% { content: "⠧"; }
+    80% { content: "⠇"; }
+    90% { content: "⠏"; }
+  }
+
+.scroll-lock {
+    overflow-y: hidden;
+}
+
+.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+  
+  
+@media screen and (max-width: 1280px) {
+    .header__img {
+        width: 48vw;
+    }
+
+    .nav {
+        &__btn {
+            font-size: 1.8vw;
+        }
+
+        &__action {
+            font-size: 1.5vw;
+
+            &::before,
+            &::after {
+                width: 1.8vw;
+                height: 1.8vw;
+            }
+        }
+    }
+}

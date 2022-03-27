@@ -1,0 +1,556 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 11vw;
+  position: relative;
+}
+
+.header__img {
+  display: block;
+  width: 91vw;
+}
+
+.header__btn-group {
+  position: absolute;
+  width: 90vw;
+  top: 3.2vw;
+  left: 4.3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__link {
+  display: block;
+  width: 2.8vw;
+  height: 2.8vw;
+  background-image: url(../images/link.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header__form-btn {
+  background-color: #156963;
+  color: #fff;
+  border: 1px solid transparent;
+  font: 700 1vw/1.35vw "Montserrat";
+  padding: 0.6vw 2.5vw;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.header__form-btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 0 #000;
+          box-shadow: 0px 0px 10px 0 #000;
+}
+
+.nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__text {
+  padding: 14.5vw 5.2vw 0;
+}
+
+.nav__title {
+  font: 500 5vw "Montserrat";
+  max-width: 40vw;
+  color: #156963;
+}
+
+.nav__subtitle {
+  font: 400 1.34vw/3.5vw "Montserrat";
+  margin-top: 2vw;
+  color: #2c1500;
+  opacity: 0.8;
+  max-width: 36vw;
+}
+
+.nav__btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__action {
+  font: 500 1.8vw/2.2vw "Montserrat";
+  color: #333;
+  opacity: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__action_prev::before {
+  content: "";
+  background-image: url(../images/arrow-back.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2.5vw;
+  height: 2.5vw;
+  margin-right: 1vw;
+}
+
+.nav__action_next {
+  color: #f2f2f2;
+}
+
+.nav__action_next::after {
+  content: "";
+  background-image: url(../images/arrow-forward.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2.5vw;
+  height: 2.5vw;
+  margin-left: 1vw;
+}
+
+.nav__btn {
+  padding: 3.1vw 3.9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 500;
+  font: 500 2.5vw "Montserrat";
+  width: 50%;
+  color: #156963;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.nav__btn_green {
+  color: #fff;
+  background-color: #156963;
+}
+
+.nav__btn:hover {
+  -webkit-box-shadow: 0px 0px 10px 0 #000;
+          box-shadow: 0px 0px 10px 0 #000;
+}
+
+.features {
+  padding: 0 4.3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 6.25vw;
+}
+
+.feature-card {
+  max-width: 22vw;
+  padding: 1.7vw 1.25vw;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.feature-card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.feature-card__title {
+  font: 700 1.25vw/1.8vw "Montserrat";
+  color: #156963;
+  max-width: 13vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature-card__title::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3.75vw;
+  height: 3.75vw;
+  padding-right: 1.25vw;
+}
+
+.feature-card__title_delivery::before {
+  background-image: url(../images/feature01.svg);
+}
+
+.feature-card__title_service {
+  max-width: 18vw;
+}
+
+.feature-card__title_service::before {
+  background-image: url(../images/feature02.svg);
+}
+
+.feature-card__title_plants::before {
+  background-image: url(../images/feature03.svg);
+}
+
+.feature-card__title_price::before {
+  background-image: url(../images/feature04.svg);
+}
+
+.feature-card__desc {
+  font: 400 0.8vw/1.25vw "Montserrat";
+  max-width: 18.5vw;
+  margin-top: 1.25vw;
+}
+
+.plants {
+  padding: 0 4.3vw;
+  margin-bottom: 27vw;
+}
+
+.plants__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plants__sort {
+  font: 700 1vw/1.2vw "Montserrat";
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  max-width: 10.5vw;
+  padding: 0.6vw 2.2vw 0.6vw 1vw;
+  background-image: url(../images/select.svg);
+  background-repeat: no-repeat;
+  background-size: 1vw;
+  background-position: right 0.6vw top 0.9vw;
+}
+
+.plants__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plants__title {
+  font: 700 1.5vw/2vw "Montserrat";
+}
+
+.plant-card {
+  text-align: center;
+  max-width: 17vw;
+}
+
+.plant-card__img {
+  width: 17vw;
+}
+
+.plant-card__title {
+  font: 700 1.25vw/1.5vw "Montserrat";
+  margin: 1.25vw 0 0.6vw;
+}
+
+.plant-card__price {
+  font: 400 1.25vw/1.5vw "Montserrat";
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal_open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 3.1vw;
+  max-width: 37vw;
+  position: relative;
+}
+
+.modal__close-cross {
+  position: absolute;
+  top: 1.7vw;
+  right: 1.7vw;
+  width: 1.1vw;
+  cursor: pointer;
+}
+
+.modal__img {
+  width: 6.8vw;
+}
+
+.modal__title {
+  font: 700 1.6vw "Montserrat";
+  margin: 1vw 0;
+}
+
+.modal__desc {
+  font-size: 1.29vw;
+}
+
+.modal__form {
+  margin-top: 3.1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 11.7vw;
+  width: 100%;
+}
+
+.modal__input {
+  padding: 0.6vw 1.17vw;
+  outline: 0;
+}
+
+.modal__input:-moz-placeholder {
+  color: #b5b8be;
+}
+
+.modal__input::-webkit-input-placeholder {
+  color: #b5b8be;
+}
+
+.modal__input, .modal__btn {
+  border: 0.6px solid #dbdedf;
+  border-radius: 1.2vw;
+  font: 400 1.3vw/1.8vw "Montserrat";
+}
+
+.modal__btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal__btn {
+  padding: 0.6vw 4.4vw;
+  cursor: pointer;
+  background-color: #e8f2ff;
+}
+
+.invalid {
+  background-color: #ffb4b4;
+}
+
+.requestRes {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  border-spacing: 2.5vw 2vw;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.requestRes td, .requestRes th {
+  font-size: 1.29vw;
+}
+
+.error {
+  display: none;
+  background-color: #fff;
+  padding: 2vw;
+  font-size: 1.25vw;
+  color: red;
+}
+
+.spinner {
+  color: #e8f2ff;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spinner:after {
+  -webkit-animation: changeContent .8s linear infinite;
+          animation: changeContent .8s linear infinite;
+  display: block;
+  content: "⠋";
+  font-size: 6.25vw;
+}
+
+@-webkit-keyframes changeContent {
+  10% {
+    content: "⠙";
+  }
+  20% {
+    content: "⠹";
+  }
+  30% {
+    content: "⠸";
+  }
+  40% {
+    content: "⠼";
+  }
+  50% {
+    content: "⠴";
+  }
+  60% {
+    content: "⠦";
+  }
+  70% {
+    content: "⠧";
+  }
+  80% {
+    content: "⠇";
+  }
+  90% {
+    content: "⠏";
+  }
+}
+
+@keyframes changeContent {
+  10% {
+    content: "⠙";
+  }
+  20% {
+    content: "⠹";
+  }
+  30% {
+    content: "⠸";
+  }
+  40% {
+    content: "⠼";
+  }
+  50% {
+    content: "⠴";
+  }
+  60% {
+    content: "⠦";
+  }
+  70% {
+    content: "⠧";
+  }
+  80% {
+    content: "⠇";
+  }
+  90% {
+    content: "⠏";
+  }
+}
+
+.scroll-lock {
+  overflow-y: hidden;
+}
+
+.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+@media screen and (max-width: 1280px) {
+  .header__img {
+    width: 48vw;
+  }
+  .nav__btn {
+    font-size: 1.8vw;
+  }
+  .nav__action {
+    font-size: 1.5vw;
+  }
+  .nav__action::before, .nav__action::after {
+    width: 1.8vw;
+    height: 1.8vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

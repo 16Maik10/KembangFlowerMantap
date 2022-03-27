@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kembang Flower Mantap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__btn-group">
+            <a href="/" class="header__link"></a>
+            <button id="openModal" class="header__form-btn">Форма</button>
+        </div>
+        <img src="images/banner.png" alt="banner of page" class="header__img">
+        <div class="header__info nav">
+            <div class="nav__text">
+                <h1 class="nav__title">Kembang Flower Mantap</h1>
+                <p class="nav__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s,
+                </p>
+            </div>
+            <div class="nav__btn-group">
+                <button class="nav__btn btn">
+                    <span class="nav__action nav__action_prev">Previous</span>
+                    Kaktus Plant
+                </button>
+                <button class="nav__btn btn nav__btn_green">
+                    <span class="nav__action nav__action_next">Next</span>
+                    Rahasia Plant
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="features">
+        <div class="feature-card">
+            <p class="feature-card__title feature-card__title_delivery">
+                Fast Delivery</p>
+            <p class="feature-card__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard</p>
+        </div>
+        <div class="feature-card">
+            <p class="feature-card__title feature-card__title_service">
+                Great Customer Service</p>
+            <p class="feature-card__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard</p>
+        </div>
+        <div class="feature-card">
+            <p class="feature-card__title feature-card__title_plants">
+                Original Plants</p>
+            <p class="feature-card__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard</p>
+        </div>
+        <div class="feature-card">
+            <p class="feature-card__title feature-card__title_price">
+                Affordable Price</p>
+            <p class="feature-card__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard</p>
+        </div>
+    </div>
+    <div class="plants">
+        <div class="plants__header">
+            <p class="plants__title">Featured Plants</p>
+            <select name="sort" id="sort" class="plants__sort">
+                <option selected value="cheap">Cheaper First</option>
+            </select>
+        </div>
+        <div class="plants__cards">
+            <div class="plant-card">
+                <img class="plant-card__img" src="images/plant01.jpg" alt="photo of plant">
+                <p class="plant-card__title">Kaktus Plants</p>
+                <p class="plant-card__price">IDR 85.000</p>
+            </div>
+            <div class="plant-card">
+                <img class="plant-card__img" src="images/plant02.jpg" alt="photo of plant">
+                <p class="plant-card__title">Landak Plants</p>
+                <p class="plant-card__price">IDR 105.000</p>
+            </div>
+            <div class="plant-card">
+                <img class="plant-card__img" src="images/plant03.jpg" alt="photo of plant">
+                <p class="plant-card__title">Kecubung Plants</p>
+                <p class="plant-card__price">IDR 85.000</p>
+            </div>
+            <div class="plant-card">
+                <img class="plant-card__img" src="images/plant04.jpg" alt="photo of plant">
+                <p class="plant-card__title">Kecubung Plants</p>
+                <p class="plant-card__price">IDR 85.000</p>
+            </div>
+            <div class="plant-card">
+                <img class="plant-card__img" src="images/plant05.jpg" alt="photo of plant">
+                <p class="plant-card__title">Kecubung Plants</p>
+                <p class="plant-card__price">IDR 85.000</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal__body">
+            <img src="images/close.svg" id="closeCross" alt="close" class="modal__close-cross">
+            <img class="modal__img" src="images/modal.svg" alt="geolocation sign">
+            <p class="modal__title">Форма сайта</p>
+            <p class="modal__desc">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum
+                has been the industry</p>
+            <form id="form" action="#" class="modal__form">
+                <input id="name" type="text" name="name" placeholder="Имя" class="modal__input">
+                <input id="tel" type="tel" name="tel" placeholder="Номер телефона" class="modal__input">
+                <div class="modal__btn-group">
+                    <button id="cancelBtn" class="modal__btn">Отменить</button>
+                    <button class="modal__btn" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+        <div id="spinner" class="spinner"></div>
+        <div id="error" class="error">
+            <p>Что-то пошло не так...</p>
+            <p>Попробуйте перезагрузить страницу</p>
+        </div>
+        <table id="table" class="requestRes">
+            <tr>
+                <th>UserID</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </tr>
+
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
