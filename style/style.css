@@ -377,13 +377,20 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 11.7vw;
   width: 100%;
+}
+
+.modal__hint {
+  margin-bottom: 0.5vw;
+  font-size: 1.2vw;
+  color: red;
+  display: none;
 }
 
 .modal__input {
   padding: 0.6vw 1.17vw;
   outline: 0;
+  margin-bottom: 2vw;
 }
 
 .modal__input:-moz-placeholder {
