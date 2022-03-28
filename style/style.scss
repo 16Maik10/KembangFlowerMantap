@@ -6,6 +6,11 @@ $green: #156963;
     font-family: "Montserrat", sans-serif;
 }
 
+.active {
+    background-color: #aaa;
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -54,6 +59,20 @@ $green: #156963;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &__slider &__text {
+        animation-name: fade;
+        animation-duration: .8s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
 
     &__text {
         padding: 14.5vw 5.2vw 0;
@@ -106,6 +125,7 @@ $green: #156963;
                 margin-left: 1vw;
             }
         }
+
     }
 
     &__btn {
@@ -120,7 +140,7 @@ $green: #156963;
         cursor: pointer;
         transition: box-shadow 0.2s;
 
-        &_green {
+        &_active {
             color: #fff;
             background-color: $green;
         }
@@ -130,6 +150,7 @@ $green: #156963;
         }
     }
 }
+
 
 .features {
     padding: 0 4.3vw;
@@ -202,12 +223,12 @@ $green: #156963;
     &__header {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 3.2vw;
     }
 
     &__sort {
         font: 700 1vw/1.2vw "Montserrat";
         appearance: none;
-        max-width: 10.5vw;
         padding: 0.6vw 2.2vw 0.6vw 1vw;
 
         background-image: url(../images/select.svg);
@@ -343,12 +364,12 @@ $green: #156963;
 }
 
 .invalid {
-    background-color: #ffb4b4;
+    border-color: #ffb4b4;
 }
 
 
 .requestRes {
-    display: block;
+    display: none;
     text-align: center;
     background-color: #fff;
     border-spacing: 2.5vw 2vw;
@@ -409,6 +430,8 @@ $green: #156963;
 }
 
 .visible{
+    opacity: 1;
+    visibility: visible;
     display: block;
 }
   

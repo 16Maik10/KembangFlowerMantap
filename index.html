@@ -20,19 +20,35 @@
         </div>
         <img src="images/banner.png" alt="banner of page" class="header__img">
         <div class="header__info nav">
-            <div class="nav__text">
-                <h1 class="nav__title">Kembang Flower Mantap</h1>
-                <p class="nav__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s,
-                </p>
-            </div>
+            <div class="nav__slider">
+                <div class="nav__text">
+                    <h1 class="nav__title">Kembang Flower Mantap</h1>
+                    <p class="nav__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum
+                        has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                </div>
+                <div class="nav__text">
+                    <h1 class="nav__title">Kembang Flower Mantap 2</h1>
+                    <p class="nav__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum
+                        has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                </div>
+                <div class="nav__text">
+                    <h1 class="nav__title">Kembang Flower Mantap 3</h1>
+                    <p class="nav__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum
+                        has been the industry's standard dummy text ever since the 1500s,
+                    </p>
+                </div>
+            </div>    
             <div class="nav__btn-group">
-                <button class="nav__btn btn">
+                <button id="prev" class="nav__btn btn">
                     <span class="nav__action nav__action_prev">Previous</span>
                     Kaktus Plant
                 </button>
-                <button class="nav__btn btn nav__btn_green">
+                <button id="next" class="nav__btn btn nav__btn_active">
                     <span class="nav__action nav__action_next">Next</span>
                     Rahasia Plant
                 </button>
@@ -70,34 +86,10 @@
             <p class="plants__title">Featured Plants</p>
             <select name="sort" id="sort" class="plants__sort">
                 <option selected value="cheap">Cheaper First</option>
+                <option value="expensive">More Expensive First</option>
             </select>
         </div>
         <div class="plants__cards">
-            <div class="plant-card">
-                <img class="plant-card__img" src="images/plant01.jpg" alt="photo of plant">
-                <p class="plant-card__title">Kaktus Plants</p>
-                <p class="plant-card__price">IDR 85.000</p>
-            </div>
-            <div class="plant-card">
-                <img class="plant-card__img" src="images/plant02.jpg" alt="photo of plant">
-                <p class="plant-card__title">Landak Plants</p>
-                <p class="plant-card__price">IDR 105.000</p>
-            </div>
-            <div class="plant-card">
-                <img class="plant-card__img" src="images/plant03.jpg" alt="photo of plant">
-                <p class="plant-card__title">Kecubung Plants</p>
-                <p class="plant-card__price">IDR 85.000</p>
-            </div>
-            <div class="plant-card">
-                <img class="plant-card__img" src="images/plant04.jpg" alt="photo of plant">
-                <p class="plant-card__title">Kecubung Plants</p>
-                <p class="plant-card__price">IDR 85.000</p>
-            </div>
-            <div class="plant-card">
-                <img class="plant-card__img" src="images/plant05.jpg" alt="photo of plant">
-                <p class="plant-card__title">Kecubung Plants</p>
-                <p class="plant-card__price">IDR 85.000</p>
-            </div>
         </div>
     </div>
     <div class="modal" id="modal">
